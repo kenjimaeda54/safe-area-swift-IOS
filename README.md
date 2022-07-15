@@ -10,19 +10,20 @@ Enteder melhor o uso do Safe Area
 
 ```swift
 	
-		NSLayoutConstraint.activate([
-			labelCenterTop.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 3),
-			labelCenterTop.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+NSLayoutConstraint.activate([
+    labelCenterTop.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 3), 
+    labelCenterTop.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+			 
+			 
+    buttonCenterBottom.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 3),
+    buttonCenterBottom.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 			
-			buttonCenterBottom.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 3),
-			buttonCenterBottom.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+    buttonCenterLeft.centerYAnchor.constraint(equalTo: view.centerYAnchor), 
+    buttonCenterLeft.leadingAnchor.constraint(equalTo: view.leadingAnchor),
 			
-			buttonCenterLeft.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-			buttonCenterLeft.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-			
-			buttonCenterRight.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-			buttonCenterRight.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-		])
+    buttonCenterRight.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+    buttonCenterRight.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+])
 		
 		
 
